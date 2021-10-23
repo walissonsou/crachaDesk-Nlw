@@ -1,0 +1,171 @@
+@keyframes bounce{
+    0%, 20%, 60%, 100%{
+        --webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        --webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        --webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+*{
+    margin:0;
+}
+html, body{
+
+
+    height: 100%;
+  
+    -webkit-font-smoothing: antialiased; 
+    
+}
+body{
+    
+    --black:hsl(240,6%,13%);
+    --gray:hsl(240,9%,89%);
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color:var(--gray);
+    background: url("imagens/background-desktop.png") no-repeat top/ cover fixed;
+    background-position: center;
+    background-size: cover;
+}
+main{
+    background: url(imagens/background.png); /*TIVE PROBLEMAS COM O FORMATO SVG*/
+    width: 375px;
+    height: 812px;
+    border-radius: 5px;
+  }
+
+    
+}
+
+.container{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--grey);
+  }
+.avatar {
+    width:10rem;
+    margin: 5rem auto 0; /* 1rem = 16px */
+    
+    position:relative; /* Marca dagua em cima da outra */
+}
+.avatar span{
+    position:absolute; /* permite que uma imagem fique sobre a outra */
+    top:-15px;
+    z-index: 1;
+}
+.avatar > img {
+    width:10rem;
+    height:11rem;
+    object-fit:cover; /* a imagem se adapta a altura e largura definidas */  
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 68%, 50% 100%, 0 68%);
+}
+.avatar:hover{
+    background;
+    animation: bounce 1.2s;
+    
+
+}
+@media(min-width:800px) {
+    main{
+      width: 358px;
+      height: 540px;
+      background: url(imagens/background-card-desktop.png);
+      background-color: #202024;
+      background-size: 358px 540px;
+    }
+h1 {
+    font-size:1.5em;
+    font-family: "Roboto", sans-serif;
+    margin-top:1.5rem;
+    text-align:center;
+}
+a{
+    color:var(--grey);
+  text-decoration: none;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 0.25rem;
+  align-items: center;
+}
+a .button{
+    color:black;
+    background-color:hsl(20 36% 56%);
+    text-decoration:none;
+}
+#myBio{
+    text-align:center;
+}
+#myLink{
+    margin-top:-0.70rem;
+}
+}
+.imagem{
+    margin-left: 6rem;
+    
+}
+p{
+    margin-top:2rem;
+    text-align: justify;
+}
+ul{
+    margin-top:2rem;
+    list-style: none; /* tirar as bolinhas */
+    padding:0;
+   
+    display:flex;
+    gap:0.5rem;
+    justify-content:center;
+    
+}
+#links{
+    border-radius:2px;
+}
+.youtube:hover{
+    animation: bounce 1.5s;
+}
+
+.twitter:hover{
+    animation: bounce 1.5s;
+}
+.facebook:hover{
+    animation: bounce 1.5s;
+}
+.instagram:hover{
+    animation: bounce 1.5s;
+}
+
+.rope {
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    height: 750px;
+    background: linear-gradient(161.24deg, #ce2783 -15.25%, #ff961e 111.89%);
+    border-radius: 0 0 3px 3px;
+    top: 0;
+    margin-top: -45.0rem;
+    margin-left: 8.9rem;
+    
+  }
+
+  .clasp {
+    position: absolute;
+    background: #121214;
+    z-index: 1;
+    width: 100px;
+    height: 12px;
+    margin-left: 8.3rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+  }
