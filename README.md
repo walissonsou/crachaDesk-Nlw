@@ -17,6 +17,6 @@
 
 <h1 align="center">
 <a href>
-    <a href="https://walissonsou.github.io/crachaDesk-Nlw"> Clique aqui </a>
+    <a align="center" href="https://walissonsou.github.io/crachaDesk-Nlw"> Clique aqui </a>
   <img alt="Readme" title="Readme" src="./ReadmeGif.gif" />
 </h1>
