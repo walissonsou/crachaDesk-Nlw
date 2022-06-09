@@ -16,5 +16,5 @@
 - [X] GIF's
 
 <h1 align="center">
-  <img alt="Readme" title="Readme" src="./Readme.Gif.gif" />
+  <img alt="Readme" title="Readme" src="./ReadmeGif.gif" />
 </h1>
